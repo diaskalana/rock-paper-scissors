@@ -49,3 +49,14 @@ body {
 .game-data {
   text-align: center;
 }
+.game-data > button {
+  background-color: black;
+  border-radius: 3px;
+  color: white;
+  padding: 3px 10px;
+}
+
+.game-data > button:hover {
+  background-color: antiquewhite;
+  color: black;
+}
