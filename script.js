@@ -1,3 +1,4 @@
+const body = document.querySelector('body')
 const rock = document.getElementById('rock');
 const paper = document.getElementById('paper');
 const scissors = document.getElementById('scissors');
@@ -68,12 +69,15 @@ function playRound(playerSelection, computerSelection) {
         winner.textContent = 'Computer Wins. You loose :('
         console.log("Computer Wins!");
         gameOver();
+        setSadFace();
+
 
     } else if (playerScore === 5) {
         winner.style.display = 'block';
         winner.textContent = "You're the Winner!"
         console.log("Player Wins!");
         gameOver();
+        Draw();
 
 
     }
@@ -84,4 +88,12 @@ function gameOver() {
     paper.disabled = true;
     scissors.disabled = true;
 }
+
+function setSadFace() {
+    body.style.backgroundImage = "url('images/sad.jpg')";
+    body.style.backgroundSize = 'cover';
+    body.style.backgroundPosition = 'center';
+    body.style.backgroundRepeat = 'no-repeat';
+}
+
 
