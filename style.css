@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.play-area {
+  width: 500px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: teal;
+  color: white;
+  padding: 20px;
+  margin: 0;
+  border-radius: 10px 10px 0 0;
+}
+.instructions,
+.player-selection {
+  padding: 20px;
+  text-align: justify;
+  margin: 0;
+}
+.player-selection {
+  display: flex;
+  justify-content: space-around;
+}
+.player-selection > button {
+  font-size: 2rem;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: teal;
+}
+
+.player-selection > button:hover {
+  background-color: white;
+}
+.game-data {
+  text-align: center;
+}
