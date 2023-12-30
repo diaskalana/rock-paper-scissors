@@ -10,6 +10,9 @@ const message = document.querySelector('.message')
 const playerScoreText = document.querySelector('.player-score')
 const computerScoreText = document.querySelector('.computer-score')
 const winner = document.querySelector('.winner')
+const year = document.querySelector('.year')
+
+year.textContent = new Date().getFullYear();
 
 winner.style.display = 'none';
 gameData.style.display = 'none';
